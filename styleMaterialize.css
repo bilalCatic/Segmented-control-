@@ -1,0 +1,39 @@
+.segmented {
+  color: #02adba;
+  border: 1px solid #02adba;
+  border-radius: 4px;
+  display: inline-block;
+}
+.segmented label {
+  color: #02adba;
+}
+.segmented input:checked + .label {
+  background-color: #02adba;
+  color: white;
+}
+[type="radio"]:not(:checked) + span,
+[type="radio"]:checked + span {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 35px;
+  text-align: center;
+  display: inline-block;
+  line-height: 35px;
+  margin: 0px;
+  float: left;
+  cursor: pointer;
+  border-right: 1px solid #02adba;
+}
+
+.segmented :last-child .label {
+  border-right: none;
+}
+.segmented input {
+  display: none;
+}
+
+span.label:before,
+span.label:after {
+  display: none;
+}
+
